@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Button from 'react-bootstrap/lib/Button';
 
 class FormComponent extends React.Component {
   constructor(props) {
@@ -21,14 +22,16 @@ class FormComponent extends React.Component {
 
   render() {
     return (
-      <form onSubmit={ this.handleSubmit }>
-        <input type="text" 
-          value={ this.state.userName }
-          onChange={(event) => this.setState({ userName: event.target.value })}
-          placeholder="Github Username" required/>
+      <div className="col-sm-12">
+        <form onSubmit={ this.handleSubmit }>
+          <input type="text" 
+            value={ this.state.userName }
+            onChange={(event) => this.setState({ userName: event.target.value })}
+            placeholder="Github Username" required/>
 
-        <button type="submit">Add Card</button>
-      </form>
+          <Button bsStyle="success" type="submit">Add Card</Button>
+        </form>
+      </div>
     );
   }
 }

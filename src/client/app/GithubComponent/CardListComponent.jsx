@@ -4,7 +4,7 @@ import CardComponent from './CardComponent.jsx';
 
 const CardListComponent = (props) => {
   return (
-    <div>
+    <div className="row">
       { props.cards.map(card => <CardComponent {...card} key={ card.id }/> )}
     </div>
   );
