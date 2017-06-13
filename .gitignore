@@ -2,3 +2,4 @@ node_modules/
 .DS_Store
 src/client/.DS_Store
 src/client/public/js/bundle.js
+.idea/
