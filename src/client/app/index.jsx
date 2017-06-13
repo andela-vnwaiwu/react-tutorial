@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 
 import AwesomeComponent from './AwesomeComponent.jsx';
 import GithubIndexComponent from './GithubComponent/GithubIndexComponent.jsx';
+import Game from './PlayNine/Game.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class App extends React.Component {
       <div className="container">
         <AwesomeComponent />
         <GithubIndexComponent />
+        <Game />
       </div>
     );
   };
