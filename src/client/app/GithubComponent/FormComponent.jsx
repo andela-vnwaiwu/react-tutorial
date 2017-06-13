@@ -17,6 +17,9 @@ class FormComponent extends React.Component {
       .then(response => {
         this.props.onSubmit(response.data)
         this.setState({ userName: '' })
+      })
+      .catch((error) => {
+        console.log(error, 'There was an error')
       });
   };
 

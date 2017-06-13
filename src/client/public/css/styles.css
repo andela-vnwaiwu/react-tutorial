@@ -1,3 +1,34 @@
 .likes-counter {
   margin-bottom: 20px;
 }
+
+.card {
+  border: 0.05em solid #cccccc;
+}
+
+span {
+  display: inline-block;
+  margin: 0.5em;
+  text-align: center;
+  background-color: #ccc;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fa-star {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+.used {
+  background-color: #eee;
+  color: #ddd;
+  cursor: not-allowed;
+}
+
+.selected {
+  background-color: #aaddaa;
+  color: #ddd;
+  cursor: not-allowed;
+}
