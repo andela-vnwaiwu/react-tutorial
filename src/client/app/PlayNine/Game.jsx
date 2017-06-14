@@ -146,7 +146,7 @@ class Game extends React.Component {
 				time: prevState.time - 1
 			}));
 
-			if (timer < 1) {
+			if (timer < 1 || self.state.doneStatus === 'Game Over!') {
 				clearInterval(count);
 
 				self.setState(prevState => ({
